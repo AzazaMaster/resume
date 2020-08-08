@@ -10,11 +10,12 @@ full.addEventListener('click', (e) => {
     }
 })
 
-document.addEventListener('touchstart', (e) => {
-    navigator.share({
-        title: document.title,
-        text: 'Hello World',
-        url: window.location.href
-    })
-})
 
+let share = () => {
+    console.log('shared');
+    navigator.share({
+        title: "Matvey",
+        text: 'Hello World',
+        url: "www.matvey.pw"
+    })
+}
