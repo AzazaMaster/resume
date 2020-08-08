@@ -1,5 +1,4 @@
 console.log("script connected")
-navigator.share("1");
 
 let full = document.getElementById("show");
 full.addEventListener('click', (e) => {
@@ -9,5 +8,13 @@ full.addEventListener('click', (e) => {
     } else {
         full.textContent = "Hide ↥";
     }
+})
+
+document.addEventListener('touchstart', (e) => {
+    navigator.share({
+        title: document.title,
+        text: 'Hello World',
+        url: window.location.href
+    })
 })
 
