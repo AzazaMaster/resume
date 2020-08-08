@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matvey Oskolkov-Tsentsiper</title>
+    <style>
+        * {
+            /* position: absolute; */
+            z-index: 10;
+        }
+
+        canvas {
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-color: aqua;
+            opacity: .2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Matvey Oskolkov-Tsentsiper</h1>
+
+    <h3>Selected work history</h3>
+    <a href='' id='show'>View full ↧</a>
+
+    <h3>Skills</h3>
+    <ol>
+        <li>Languages:
+            <ul>
+                <li>English: professional</li>
+                <li>Russian: native</li>
+                <li>Japanese: beginner</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Stuff I love</h3>
+
+    <canvas id="canvas"></canvas>
+
+    <script src='app.js'></script>
+</body>
+</html>
